@@ -71,7 +71,7 @@ function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
             <span className="text-cream/50 font-normal normal-case tracking-normal"> · {item.year}</span>
           ) : null}
         </span>
-        <h3 className="font-display text-cream text-lg md:text-xl leading-snug">{item.title}</h3>
+        <h3 className="font-display text-cream text-lg md:text-xl leading-snug">{item.category}</h3>
       </div>
 
       <div
