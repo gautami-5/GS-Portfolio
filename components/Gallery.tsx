@@ -37,7 +37,7 @@ const GALLERY_ITEMS: GalleryItem[] = [
   { id: 13, src: "/cricket.jpg", category: "Greens Women Cricket Runner Up", year: "2025",  span: "col-span-1 row-span-1" },
   { id: 14, src: "/badminton3.jpeg", category: "Garware Badminton Tournament",  span: "col-span-1 row-span-2" },
   { id: 15, src: "/badminton1.jpg", category: "VIT Badminton team",  span: "col-span-1 row-span-1" },
-  { id: 16, src: "/csi1.jpeg", category: "THE CSI TEAM",  year: "2026", span: "col-span-2 row-span-1" },
+  { id: 16, src: "/csi1.JPG", category: "THE CSI TEAM",  year: "2026", span: "col-span-2 row-span-1" },
   { id: 17, src: "/r4.jpg", category: "Greens Geet Gata Chal",  span: "col-span-1 row-span-1" },
 
 ];
