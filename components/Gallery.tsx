@@ -8,7 +8,7 @@ import RevealText from "./RevealText";
 type GalleryItem = {
   id: number;
   src: string;
-  category: string;
+  title: string;
 
   year?: string;
   /** Tailwind grid-span classes — controls the editorial collage rhythm. */
@@ -21,25 +21,26 @@ type GalleryItem = {
  * `/public/gallery`). `span` accepts any of: "col-span-1 row-span-1",
  * "col-span-2 row-span-1", "col-span-1 row-span-2", "col-span-2 row-span-2".
  */
-const GALLERY_ITEMS: GalleryItem[] = [
-  { id: 1, src: "/r7.jpg", category: "Leadership", year: "2025", span: "col-span-2 row-span-2" },
-  { id: 2, src: "/r5.jpg", category: "Distribution Drive-Dadar",  year: "2025", span: "col-span-1 row-span-1" },
-  { id: 3, src: "/dance.jpg", category: "Dance",  year: "2025", span: "col-span-1 row-span-2" },
-  { id: 4, src: "/csi3.jpeg", category: "TEDx Team",  year: "2026", span: "col-span-1 row-span-1" },
-  { id: 5, src: "/r2.jpg", category: "SOPHIA UNIVERSITY-JAPAN",  year: "2025", span: "col-span-2 row-span-1" },
-  { id: 6, src: "/c7.jpeg", category: "Actress Kranti Redkar",  year: "2026", span: "col-span-1 row-span-1" },
-  { id: 7, src: "/csi4.jpeg", category: "CSI Enthusia",  year: "2026", span: "col-span-1 row-span-3" },
-  { id: 8, src: "/h2.jpeg", category: "Womens Day Celebration Hosts",  span: "col-span-1 row-span-2" },
-  { id: 9, src: "/badminton2.jpg", category: "Greens Badminton Tournament Winners",  year: "2024", span: "col-span-2 row-span-1" },
-  { id: 10, src: "/t1.jpeg", category: "Paralympic Medalist Komal Waghmare",  span: "col-span-1 row-span-1" },
-  { id: 11, src: "/cr2.jpeg", category: "Computer Department Project Exhibition",  span: "col-span-2 row-span-2" },
-  { id: 12, src: "/h3.jpeg", category: "Hosting",  span: "col-span-1 row-span-1" },
-  { id: 13, src: "/cricket.jpg", category: "Greens Women Cricket Runner Up", year: "2025",  span: "col-span-1 row-span-1" },
-  { id: 14, src: "/badminton3.jpeg", category: "Garware Badminton Tournament",  span: "col-span-1 row-span-2" },
-  { id: 15, src: "/badminton1.jpg", category: "VIT Badminton team",  span: "col-span-1 row-span-1" },
-  { id: 16, src: "/csi1.JPG", category: "THE CSI TEAM",  year: "2026", span: "col-span-2 row-span-1" },
-  { id: 17, src: "/r4.jpg", category: "Greens Geet Gata Chal",  span: "col-span-1 row-span-1" },
 
+const GALLERY_ITEMS: GalleryItem[] = [
+  { id: 1, src: "/r7.jpg", title: "Leadership", year: "2025", span: "col-span-2 row-span-2" },
+  { id: 2, src: "/r5.jpg", title: "Distribution Drive - Dadar", year: "2025", span: "col-span-1 row-span-1" },
+  { id: 3, src: "/dance.jpg", title: "Dance", year: "2025", span: "col-span-1 row-span-2" },
+  { id: 4, src: "/csi3.jpeg", title: "TEDx Team", year: "2026", span: "col-span-1 row-span-1" },
+  { id: 5, src: "/r2.jpg", title: "Sophia University, Japan", year: "2025", span: "col-span-2 row-span-1" },
+  { id: 6, src: "/c7.jpeg", title: "Actress Kranti Redkar", span: "col-span-1 row-span-1" },
+  { id: 7, src: "/csi4.jpeg", title: "CSI Enthusia", year: "2026", span: "col-span-1 row-span-3" },
+  { id: 8, src: "/h2.jpeg", title: "Women's Day Celebration Hosts",year: "2026", span: "col-span-1 row-span-2" },
+  { id: 9, src: "/badminton2.jpg", title: "Greens Badminton Tournament Winners", year: "2024", span: "col-span-2 row-span-1" },
+  { id: 10, src: "/h3.jpeg", title: "Hosting", span: "col-span-1 row-span-1" },
+  { id: 11, src: "/r8.jpeg", title: "Communication", span: "col-span-1 row-span-1" },
+  { id: 12, src: "/cr2.jpeg", title: "Computer Department Project Exhibition",year: "2026", span: "col-span-2 row-span-2" },
+  { id: 13, src: "/t1.jpeg", title: "Paralympic Medalist Komal Waghmare",year:"2026", span: "col-span-2 row-span-2" },
+  { id: 14, src: "/cricket2.jpeg", title: "Greens Women's Cricket Runner-Up", year: "2025", span: "col-span-1 row-span-2" },
+  { id: 15, src: "/badminton3.jpeg", title: "Garware Badminton Tournament",year:"2026", span: "col-span-1 row-span-2" },
+  { id: 16, src: "/badminton1.jpg", title: "VIT Badminton Team",year:"2025", span: "col-span-1 row-span-1" },
+  { id: 18, src: "/r4.jpg", title: "Greens Geet Gata Chal", span: "col-span-1 row-span-1" },
+  { id: 17, src: "/csi1.JPG", title: "The CSI Team", year: "2026", span: "col-span-2 row-span-1" },
 ];
 
 function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
@@ -48,33 +49,37 @@ function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
       variants={staggerItem}
       className={`group relative overflow-hidden rounded-[20px] shadow-[0_18px_44px_-22px_rgba(3,27,85,0.35)] transition-shadow duration-500 ease-editorial hover:shadow-[0_28px_60px_-20px_rgba(3,27,85,0.45)] ${item.span}`}
     >
-      {
+      
         <Image
         src={item.src}
-        alt={item.category}
+        alt={item.title}
         fill
         sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
         loading={index < 4 ? "eager" : "lazy"}
         className="object-cover transition-transform duration-[900ms] group-hover:scale-105"
       />
-      } 
+      
 
       <div
         aria-hidden="true"
         className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/10 to-transparent opacity-0 transition-opacity duration-500 ease-editorial group-hover:opacity-100"
       />
-
       <div className="absolute inset-x-0 bottom-0 p-5 md:p-6 translate-y-3 opacity-0 transition-all duration-500 ease-editorial group-hover:translate-y-0 group-hover:opacity-100">
-        <span className="block text-[10px] tracking-widest2 uppercase text-gold font-semibold mb-1.5">
-          {item.category}
-          {item.year ? (
-            <span className="text-cream/50 font-normal normal-case tracking-normal"> · {item.year}</span>
-          ) : null}
-        </span>
-        <h3 className="font-display text-cream text-lg md:text-xl leading-snug">{item.category}</h3>
-      </div>
 
-      <div
+<h3 className="text-[#C9A227] font-semibold uppercase tracking-[0.18em] text-sm md:text-base leading-snug">
+  {item.title}
+</h3>
+
+{item.year && (
+  <p className="text-white/70 text-xs mt-1">
+    {item.year}
+  </p>
+)}
+
+</div>
+      
+
+   <div
         aria-hidden="true"
         className="absolute inset-0 ring-1 ring-inset ring-navy/10 rounded-[20px] pointer-events-none"
       />

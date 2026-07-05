@@ -24,10 +24,11 @@ const COUNCILS = [
     description:
       "Building Teams Beyond Competition",
     points: [
-      "A standing inter-branch league beyond the annual meet",
+      "Winner Recognition on official platforms",
       "Proper equipment and slot access for practice",
       "Improve medical support during events",
-      "Presence of Sports Officer during official leagues"
+      "Presence of Sports Officer during official leagues",
+      "Stronger collaboration with Publicity & VCC"
     ],
     image:
       "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200&auto=format&fit=crop",
@@ -40,6 +41,7 @@ const COUNCILS = [
       "Create a single registration portal for student council events, competitions & workshops",
       "Encourage industry-focused, real-world projects",
       "A shared repository of past projects and learnings",
+      "Government & industry collaborations"
     ],
     image:
       "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=1200&auto=format&fit=crop",
@@ -51,7 +53,8 @@ const COUNCILS = [
     points: [
       "Build dedicated teams for each council",
       "Ensure content is published within 24hr",
-      "",
+      "Burnout prevention",
+      "Recognition framework"
     ],
     image:
       "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=1200&auto=format&fit=crop",
@@ -63,7 +66,7 @@ const COUNCILS = [
     points: [
       "Dedicated rehearsal slots, booked well in advance",
       "A cultural calendar spaced to avoid academic clashes",
-      "Proper stage, sound and lighting budget, protected",
+      "Volunteer recognition",
     ],
     image:
       "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1200&auto=format&fit=crop",
@@ -88,6 +91,7 @@ const COUNCILS = [
       "A small standing creative team available to all councils",
       "Encourage creativity while preserving brand consistency",
       "Credit and portfolio support for student designers",
+      "Reusable assets"
     ],
     image:
       "https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=1200&auto=format&fit=crop",
@@ -98,6 +102,7 @@ const COUNCILS = [
       "Develop students into confident speakers and leaders",
     points: [
       "Organize MUN Bootcamps",
+      "Author interactions",
       "Encourage debates, discussions and writing competitions.",
       "Structured space for debate and public speaking practice",
     ],

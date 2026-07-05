@@ -33,17 +33,17 @@ export default function About() {
           </Reveal>
 
           <Reveal delay={0.3}>
-            <div className="relative aspect-[3/4] w-full max-w-sm overflow-hidden">
+            <div className="relative aspect-[3/4] w-full max-w-sm overflow-hidden -mt-12">
               <img
                 src="/formal2.jpeg"
-                alt="Rahul Kulkarni in conversation with fellow students"
+                alt="Gautami"
                 className="h-full w-full object-cover"
               />
             </div>
           </Reveal>
         </div>
 
-        <div className="lg:col-span-7 lg:pt-28">
+        <div className="lg:col-span-7 lg:pt-20">
           <Reveal delay={0.1}>
             <p className="font-display text-fluid-xl leading-snug text-navy/90 mb-10 max-w-2xl">
            
@@ -78,10 +78,10 @@ export default function About() {
 
           <RevealGroup className="hairline mt-16 pt-10 grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-10 max-w-2xl">
             {[
-              "Class Representative",
-              "CSI Publicity Head",
-              "TEDx Organizer",
-              "Sports Council",
+              "VISION",
+              "COLLABORATION",
+              "EXECUTION",
+              "IMPACT",
             ].map((role) => (
               <motion.div key={role} variants={staggerItem}>
                 <p className="text-fluid-sm text-navy/80 font-medium leading-snug">
