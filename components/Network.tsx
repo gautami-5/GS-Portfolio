@@ -1,5 +1,5 @@
 "use client";
-
+import { assetPath } from "@/lib/assetPath";
 import { useEffect, useRef, useState } from "react";
 
 type Mentor = {
@@ -16,7 +16,7 @@ const mentors: Mentor[] = [
     designation: "Union Minister of Social Justice & Empowerment",
     organization: "Government of India",
     image:
-      "/c6.jpeg",
+      assetPath("/c6.jpeg"),
     description:
       "His guidance on institutional leadership and student development shaped my understanding of responsibility beyond academics.",
   },
@@ -25,7 +25,7 @@ const mentors: Mentor[] = [
     designation: "Member of Parliament",
     organization: "Rajyasabha",
     image:
-      "/c5.jpeg",
+     assetPath("/c5.jpeg"),
     description:
       "His wisdom, simplicity and free-spirited nature taught me that lasting influence comes not from authority but from character and the values we uphold",
   },
@@ -34,7 +34,7 @@ const mentors: Mentor[] = [
     designation: "Additional Commissioner",
     organization: "Department of Revenue",
     image:
-      "/c4.jpeg",
+    assetPath("/c4.jpeg"),
     description:
       "His fearless approach and unwavering commitment to protecting the youth inspire me to lead with integrity, take initiative and serve society with purpose",
   },
@@ -43,7 +43,7 @@ const mentors: Mentor[] = [
     designation: "Former Governor of Maharashtra",
     organization: "Former Member of Rajya Sabha",
     image:
-      "/c3.jpg",
+     assetPath("/c3.jpg"),
     description:
       "Meeting his excellency reminded me that humility and a commitment to lifelong learning are the hallmarks of true leadership. His soft-spoken natue & thoughtful presence reinforced the value of knowledge & continuous self-improvement",
   }
