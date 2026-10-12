@@ -37,6 +37,9 @@ jobs:
       - name: Build website
         run: npm run build
 
+      - name: Disable Jekyll
+        run: touch ./out/.nojekyll
+
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:

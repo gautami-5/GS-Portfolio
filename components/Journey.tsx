@@ -1,5 +1,7 @@
 "use client";
 
+import { assetPath } from "@/lib/assetPath";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "./Reveal";
@@ -10,49 +12,49 @@ const MILESTONES = [
     title: "Freshers",
     description: "It started with a stage. As a Freshers' Finalist, I found the confidence to lead — and never looked back",
     image:
-      "/freshers.jpeg",
+      assetPath("/freshers.jpeg"),
   },
   {
     title: "Class Representative",
     description: "As Class Representative, I bridged students and faculty — listening, communicating, representing",
     image:
-      "/cr3.jpeg",
+      assetPath("/cr3.jpeg"),
   },
   {
     title: "CSI Publicity Head",
     description: "Planned publicity campaigns, boosted engagement, and coordinated promotions across organizing teams.",
     image:
-      "/csi2.jpg",
+      assetPath("/csi2.jpg"),
   },
   {
     title: "Badminton Head Sports Council",
     description: "Built discipline off the field, into how events get run. Supported SportsMania — assisting execution, driving participation, and coordinating volunteers and teams",
     image:
-      "/s2.jpeg",
+      assetPath("/s2.jpeg"),
   },
   {
     title: "Publicity Council Core Member",
     description: "Supported college-wide publicity, collaborating across councils to plan and execute campaigns.",
     image:
-      "/p1.jpeg",
+      assetPath("/p1.jpeg"),
   },
   {
     title: "TEDx Volunteer",
     description: "Curated the session of Komal Waghmare, a double Paralympic bronze medalist, supporting speaker coordination and delivering a memorable TEDx experience.",
     image:
-      "/t3.jpeg",
+      assetPath("/t3.jpeg"),
   },
   {
     title: "Anchor",
     description: "Found a voice for the room — calm, clear, in command.",
     image:
-      "/h4.jpeg",
+      assetPath("/h4.jpeg"),
   },
   {
     title: "General Secretary Candidate",
     description: "Every prior role, now offered in service of the whole council.",
     image:
-      "/h1.JPG",
+      assetPath("/h1.JPG"),
   },
 ];
 

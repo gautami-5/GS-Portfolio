@@ -1,5 +1,7 @@
 "use client";
 
+import { assetPath } from "@/lib/assetPath";
+
 import { motion } from "framer-motion";
 import Reveal, { RevealGroup, staggerItem } from "./Reveal";
 import RevealText from "./RevealText";
@@ -35,7 +37,7 @@ export default function About() {
           <Reveal delay={0.3}>
             <div className="relative aspect-[3/4] w-full max-w-sm overflow-hidden -mt-12">
               <img
-                src="/formal2.jpeg"
+                src={assetPath("/formal2.jpeg")}
                 alt="Gautami"
                 className="h-full w-full object-cover"
               />

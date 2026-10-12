@@ -1,5 +1,5 @@
 "use client";
-
+import { assetPath } from "@/lib/assetPath";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Reveal, { RevealGroup, staggerItem } from "./Reveal";
@@ -23,24 +23,24 @@ type GalleryItem = {
  */
 
 const GALLERY_ITEMS: GalleryItem[] = [
-  { id: 1, src: "/r7.jpg", title: "Leadership", year: "2025", span: "col-span-2 row-span-2" },
-  { id: 2, src: "/r5.jpg", title: "Distribution Drive - Dadar", year: "2025", span: "col-span-1 row-span-1" },
-  { id: 3, src: "/dance.jpg", title: "Dance", year: "2025", span: "col-span-1 row-span-2" },
-  { id: 4, src: "/csi3.jpeg", title: "TEDx Team", year: "2026", span: "col-span-1 row-span-1" },
-  { id: 5, src: "/r2.jpg", title: "Sophia University, Japan", year: "2025", span: "col-span-2 row-span-1" },
-  { id: 6, src: "/c7.jpeg", title: "Actress Kranti Redkar", span: "col-span-1 row-span-1" },
-  { id: 7, src: "/csi4.jpeg", title: "CSI Enthusia", year: "2026", span: "col-span-1 row-span-3" },
-  { id: 8, src: "/h2.jpeg", title: "Women's Day Celebration Hosts",year: "2026", span: "col-span-1 row-span-2" },
-  { id: 9, src: "/badminton2.jpg", title: "Greens Badminton Tournament Winners", year: "2024", span: "col-span-2 row-span-1" },
-  { id: 10, src: "/h3.jpeg", title: "Hosting", span: "col-span-1 row-span-1" },
-  { id: 11, src: "/r8.jpeg", title: "Communication", span: "col-span-1 row-span-1" },
-  { id: 12, src: "/cr2.jpeg", title: "Computer Department Project Exhibition",year: "2026", span: "col-span-2 row-span-2" },
-  { id: 13, src: "/t1.jpeg", title: "Paralympic Medalist Komal Waghmare",year:"2026", span: "col-span-2 row-span-2" },
-  { id: 14, src: "/cricket2.jpeg", title: "Greens Women's Cricket Runner-Up", year: "2025", span: "col-span-1 row-span-2" },
-  { id: 15, src: "/badminton3.jpeg", title: "Garware Badminton Tournament",year:"2026", span: "col-span-1 row-span-2" },
-  { id: 16, src: "/badminton1.jpg", title: "VIT Badminton Team",year:"2025", span: "col-span-1 row-span-1" },
-  { id: 18, src: "/r4.jpg", title: "Greens Geet Gata Chal", span: "col-span-1 row-span-1" },
-  { id: 17, src: "/csi1.JPG", title: "The CSI Team", year: "2026", span: "col-span-2 row-span-1" },
+  { id: 1, src: assetPath("/r7.jpg"), title: "Leadership", year: "2025", span: "col-span-2 row-span-2" },
+  { id: 2, src: assetPath("/r5.jpg"), title: "Distribution Drive - Dadar", year: "2025", span: "col-span-1 row-span-1" },
+  { id: 3, src: assetPath("/dance.jpg"), title: "Dance", year: "2025", span: "col-span-1 row-span-2" },
+  { id: 4, src: assetPath("/csi3.jpeg"), title: "TEDx Team", year: "2026", span: "col-span-1 row-span-1" },
+  { id: 5, src: assetPath("/r2.jpg"), title: "Sophia University, Japan", year: "2025", span: "col-span-2 row-span-1" },
+  { id: 6, src: assetPath("/c7.jpeg"), title: "Actress Kranti Redkar", span: "col-span-1 row-span-1" },
+  { id: 7, src: assetPath("/csi4.jpeg"), title: "CSI Enthusia", year: "2026", span: "col-span-1 row-span-3" },
+  { id: 8, src: assetPath("/h2.jpeg"), title: "Women's Day Celebration Hosts",year: "2026", span: "col-span-1 row-span-2" },
+  { id: 9, src: assetPath("/badminton2.jpg"), title: "Greens Badminton Tournament Winners", year: "2024", span: "col-span-2 row-span-1" },
+  { id: 10, src: assetPath("/h3.jpeg"), title: "Hosting", span: "col-span-1 row-span-1" },
+  { id: 11, src: assetPath("/r8.jpeg"), title: "Communication", span: "col-span-1 row-span-1" },
+  { id: 12, src: assetPath("/cr2.jpeg"), title: "Computer Department Project Exhibition",year: "2026", span: "col-span-2 row-span-2" },
+  { id: 13, src: assetPath("/t1.jpeg"), title: "Paralympic Medalist Komal Waghmare",year:"2026", span: "col-span-2 row-span-2" },
+  { id: 14, src: assetPath("/cricket2.jpeg"), title: "Greens Women's Cricket Runner-Up", year: "2025", span: "col-span-1 row-span-2" },
+  { id: 15, src: assetPath("/badminton3.jpeg"), title: "Garware Badminton Tournament",year:"2026", span: "col-span-1 row-span-2" },
+  { id: 16, src: assetPath("/badminton1.jpg"), title: "VIT Badminton Team",year:"2025", span: "col-span-1 row-span-1" },
+  { id: 18, src: assetPath("/r4.jpg"), title: "Greens Geet Gata Chal", span: "col-span-1 row-span-1" },
+  { id: 17, src: assetPath("/csi1.JPG"), title: "The CSI Team", year: "2026", span: "col-span-2 row-span-1" },
 ];
 
 function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {

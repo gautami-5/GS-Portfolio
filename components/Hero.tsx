@@ -1,5 +1,7 @@
 "use client";
 
+import { assetPath } from "@/lib/assetPath";
+
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
@@ -99,7 +101,7 @@ export default function Hero() {
           >
             <motion.img
               style={{ scale: imageScale }}
-              src="/hero.jpg"
+              src={assetPath("/hero.jpg")}
               alt="Portrait of Gautami Kamble, candidate for General Secretary"
               className="h-full w-full object-cover grayscale-[15%]"
             />
